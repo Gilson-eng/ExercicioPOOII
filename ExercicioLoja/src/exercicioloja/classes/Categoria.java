@@ -8,6 +8,8 @@ public class Categoria {
     private String nome;
     private double imposto;
     private int Id;
+    
+    public Categoria(){}
 
     public Categoria(String nome, double imposto, int Id) {
         this.nome = nome;

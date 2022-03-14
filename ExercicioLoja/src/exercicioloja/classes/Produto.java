@@ -1,21 +1,28 @@
 package exercicioloja.classes;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Gilson
  */
 public class Produto {
     
+    private int id;
     private String descricao;
     private double preco;
     private double quantidadeEstoque;
-    private Categoria Categoria;
-
-    public Produto(String descricao, double preco, double quantidadeEstoque, Categoria Categoria) {
+    private Categoria categoria;
+    
+    
+    public Produto(){}
+    
+    public Produto(int id, String descricao, double preco, double quantidadeEstoque, Categoria categoria) {
+        this.id = id;
         this.descricao = descricao;
         this.preco = preco;
         this.quantidadeEstoque = quantidadeEstoque;
-        this.Categoria = Categoria;
+        this.categoria = categoria;
     }
    
 
@@ -23,6 +30,14 @@ public class Produto {
         return descricao;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+      
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
@@ -43,14 +58,14 @@ public class Produto {
         this.quantidadeEstoque = quantidade;
     }
 
-    public void DecrementarEstoque(double estoque){
-        
-        setQuantidadeEstoque(getQuantidadeEstoque()-estoque);
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria Categoria) {
+        this.categoria = Categoria;
     }
     
-    public void AdicionarEstoque(double estoque){
-        setQuantidadeEstoque(getQuantidadeEstoque()+estoque);
-    }
-    
+      
     
 }

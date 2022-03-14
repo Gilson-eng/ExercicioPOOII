@@ -1,5 +1,6 @@
 package exercicioloja;
 import Views.Menu;
+import Views.Login;
 import exercicioloja.classes.Categoria;
 
 
@@ -14,8 +15,8 @@ public class ExercicioLoja {
      */
     public static void main(String[] args) {
         
-          Menu MN = new Menu();
-          MN.setVisible(true);
+          Login login = new Login();
+          login.setVisible(true);
        
         
        
